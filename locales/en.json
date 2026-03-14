@@ -1,0 +1,165 @@
+{
+  "nav": {
+    "approach": "APPROACH",
+    "caseStudies": "CASE STUDY",
+    "about": "ABOUT",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "title": "Financial Clarity for Complex Organizations",
+    "description1": "When financial data is spread across multiple ERPs, spreadsheets and regional systems, leadership loses visibility into what actually drives performance.",
+    "description2": "We design centralized financial data architectures that turn fragmented operational data into reliable decision intelligence.",
+    "description3": "From automated consolidation to transaction-level profitability analysis, the goal is simple: give leadership a clear and trusted view of the business.",
+    "cta": "Request Data Architecture Assessment"
+  },
+  "problem": {
+    "label": "THE CHALLENGE",
+    "title": "When Financial Reporting Stops Scaling",
+    "description1": "Most growing organizations reach a point where financial reporting stops scaling with operational complexity.",
+    "description2": "Different regions operate on different systems. Finance teams maintain dozens of spreadsheets. Reconciliations become manual and slow.",
+    "symptomsTitle": "Common symptoms",
+    "symptoms": [
+      "Financial close takes 7-10+ days",
+      "Numbers differ between departments",
+      "Profitability cannot be traced to transactions",
+      "Forecasting relies on manual spreadsheets",
+      "Leadership dashboards raise more questions than they answer"
+    ],
+    "conclusion": "These are rarely reporting problems. They are data architecture problems."
+  },
+  "insight": {
+    "label": "THE INSIGHT",
+    "title": "Why Most Data Projects Fail in Finance",
+    "description1": "Many organizations try to solve reporting problems by adding dashboards.",
+    "description2": "But dashboards sit on top of fragmented financial data structures. When KPI definitions differ across departments and systems remain disconnected, every new report creates another version of the truth.",
+    "description3": "Real transformation requires redesigning the financial data architecture itself: how systems integrate, how entities relate, and how performance metrics are defined."
+  },
+  "results": {
+    "label": "THE OUTCOME",
+    "title": "What a Governed Financial Data Architecture Enables",
+    "items": [
+      {
+        "title": "Daily Financial Visibility",
+        "description": "Financial performance updated automatically instead of weeks after month-end close."
+      },
+      {
+        "title": "Transaction-Level Profitability",
+        "description": "Drill-down from executive P&L to individual transactions, deals or invoices."
+      },
+      {
+        "title": "Unified KPI Logic",
+        "description": "One consistent definition of revenue, margin and cost across all entities and regions."
+      },
+      {
+        "title": "Faster Decision Cycles",
+        "description": "Leadership sees issues early and can react before problems escalate."
+      }
+    ]
+  },
+  "caseStudy": {
+    "label": "CASE STUDY",
+    "title": "Global Energy Trading Company",
+    "situationTitle": "The Situation",
+    "situationDescription": "A multinational energy trading group operating across APAC, EMEA and North America faced severe reporting fragmentation.",
+    "situationList": [
+      "25 legal entities",
+      "Multiple ERP systems",
+      "Separate CRM and trading platforms",
+      "Dozens of Excel-based reporting files",
+      "10-day reporting delay after month-end close"
+    ],
+    "situationConclusion": "Leadership lacked transaction-level visibility into profitability.",
+    "transformationTitle": "The Transformation",
+    "transformationDescription": "A centralized financial data architecture was designed and implemented, integrating ERP, CRM, ETRM and accounting systems into a governed Snowflake-based platform.",
+    "transformationSubtitle": "The project included:",
+    "transformationList": [
+      "Reverse engineering undocumented system logic",
+      "Designing a unified financial data model",
+      "Building automated ELT pipelines",
+      "Standardizing profitability reporting across regions"
+    ],
+    "impactTitle": "The Impact",
+    "impactList": [
+      "Reporting cycle reduced from 10 days post-close to daily refresh",
+      "P&L statements drillable to transaction level",
+      "Clear profitability visibility across entities and business lines"
+    ]
+  },
+  "approach": {
+    "label": "THE APPROACH",
+    "title": "Our Approach to Financial Data Transformation",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Architecture Assessment",
+        "description": "Mapping systems, entities and reporting logic to identify structural bottlenecks."
+      },
+      {
+        "number": "02",
+        "title": "Financial Data Model",
+        "description": "Designing a unified data architecture that standardizes KPI definitions and entity structures."
+      },
+      {
+        "number": "03",
+        "title": "Integration & Automation",
+        "description": "Building scalable data pipelines connecting ERP, CRM, ETRM and accounting systems."
+      },
+      {
+        "number": "04",
+        "title": "Executive Intelligence Layer",
+        "description": "Delivering reporting environments that allow leadership to move from high-level financials to transaction-level detail instantly."
+      }
+    ]
+  },
+  "about": {
+    "label": "ABOUT",
+    "title": "About Vladislav Secrieru",
+    "description1": "Senior Finance & Data Transformation Specialist based in Oslo.",
+    "description2": "Specializing in building financial data architectures for multinational and multi-entity operations.",
+    "description3": "Background includes consulting and financial analytics roles across finance, data and performance governance.",
+    "credentials": [
+      "Former consultant at KPMG",
+      "Former consultant at EY",
+      "Experience integrating 25+ legal entities into unified data platforms",
+      "Expertise in Snowflake, SQL, Python and modern BI environments"
+    ]
+  },
+  "clients": {
+    "label": "IDEAL CLIENT",
+    "title": "Who This Work Is Most Valuable For",
+    "description": "This work is typically relevant for organizations with complex operational structures.",
+    "criteria": [
+      "Multiple legal entities",
+      "Operations across several regions",
+      "Several ERP or operational systems",
+      "Heavy reliance on Excel reporting",
+      "Finance teams spending weeks preparing reports"
+    ],
+    "conclusion": "Typically mid-market and enterprise companies with significant operational complexity."
+  },
+  "cta": {
+    "label": "GET STARTED",
+    "title": "Regain Control of Your Financial Data",
+    "description1": "If your organization struggles with fragmented systems, slow reporting or inconsistent numbers, there is usually a structural reason behind it.",
+    "description2": "Fixing it requires more than dashboards. It requires the right financial data architecture.",
+    "button": "Request Financial Data Architecture Assessment"
+  },
+  "contact": {
+    "label": "CONTACT",
+    "title": "Let's Discuss Your Data Challenges",
+    "form": {
+      "fullName": "Full Name",
+      "workEmail": "Work Email",
+      "companyWebsite": "Company Website",
+      "challenge": "What is your biggest challenge right now?",
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent successfully."
+    }
+  },
+  "footer": {
+    "company": "Secrieru & Partners",
+    "services": "Financial Data Architecture | FP&A Transformation | Executive Reporting",
+    "contact": "Contact: vladislav.secrieru@gmail.com",
+    "location": "Oslo, Norway"
+  }
+}
