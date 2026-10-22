@@ -1,12 +1,12 @@
 import { defineRouting } from "next-intl/routing"
 
 export const routing = defineRouting({
-  locales: ["en", "ru", "ro"],
+  locales: ["no", "en", "ro", "ru"],
   defaultLocale: "en",
   localePrefix: "always",
 })
 
 export type Locale = (typeof routing.locales)[number]
 
-export const localeNames: Record<Locale, string> = { en: "EN", ru: "RU", ro: "RO" }
-export const ogLocales: Record<Locale, string> = { en: "en_US", ru: "ru_RU", ro: "ro_RO" }
+export const localeNames: Record<Locale, string> = { no: "NO", en: "EN", ro: "RO", ru: "RU" }
+export const ogLocales: Record<Locale, string> = { no: "nb_NO", en: "en_US", ro: "ro_RO", ru: "ru_RU" }

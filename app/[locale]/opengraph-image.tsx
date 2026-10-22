@@ -2,12 +2,13 @@ import { ImageResponse } from "next/og"
 import en from "@/messages/en.json"
 import ru from "@/messages/ru.json"
 import ro from "@/messages/ro.json"
+import no from "@/messages/no.json"
 
 export const alt = "Vladislav Secrieru"
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
 
-const messages = { en, ru, ro } as const
+const messages = { no, en, ru, ro } as const
 
 export default async function OpengraphImage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params

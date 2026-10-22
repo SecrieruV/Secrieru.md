@@ -11,10 +11,10 @@ const paths = (v, p = "") =>
 
 const base = new Set(paths(load("en")))
 let bad = false
-for (const l of ["ru", "ro"]) {
+for (const l of ["no", "ru", "ro"]) {
   const other = new Set(paths(load(l)))
   for (const k of base) if (!other.has(k)) (bad = true), console.error(`${l}: missing ${k}`)
   for (const k of other) if (!base.has(k)) (bad = true), console.error(`${l}: extra ${k}`)
 }
 if (bad) process.exit(1)
-console.log("messages OK: en, ru, ro share the same keys")
+console.log("messages OK: en, no, ru, ro share the same keys")

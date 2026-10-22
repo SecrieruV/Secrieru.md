@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "title": "Vladislav Secrieru | Finans og data",
+    "description": "Jeg bygger én felles datakilde og et rapporteringslag som finans- og kommersielle team stoler på og bruker. Åtte år i Big 4-rådgivning, offentlig analyse og FP&A i selskaper. Bosatt i Oslo, åpen for faste stillinger i Norge.",
+    "ogTagline": "Finans og data. Jeg bygger én felles datakilde og et rapporteringslag som finans- og kommersielle team stoler på og bruker.",
+    "ogStatus": "Oslo. Åpen for faste stillinger i Norge.",
+    "personDescription": "Spesialist på finans og data. Bygger styrte rapporteringslag for konsern med flere juridiske enheter. Åtte år i Big 4-rådgivning, offentlig analyse og FP&A i selskaper."
+  },
+  "nav": {
+    "main": "Hovedmeny",
+    "work": "Prosjekter",
+    "experience": "Erfaring",
+    "together": "Samarbeid",
+    "contact": "Kontakt",
+    "themeLight": "Lys",
+    "themeDark": "Mørk",
+    "themeSwitch": "Bytt til {mode} modus",
+    "language": "Språk"
+  },
+  "hero": {
+    "subline": "Finans og data. Jeg bygger én felles datakilde og et rapporteringslag som finans- og kommersielle team stoler på og bruker.",
+    "body": "I omtrent åtte år har jeg jobbet med Big 4-rådgivning, offentlig analyse og FP&A i selskaper. Hos World Kinect jobbet jeg sammen med finansteamet for å samle ledelsesrapporteringen for 25 juridiske enheter i én styrt kilde. Manuelle uttrekk og avstemminger ble erstattet av automatiserte dataflyter, og rapporten gikk fra 10 dager etter månedsavslutning til daglig oppdatering.",
+    "status": "Bosatt i Oslo. Åpen for faste stillinger i Norge og utvalgte prosjekter.",
+    "seeWork": "Se utvalgte prosjekter",
+    "cv": "Last ned CV",
+    "book": "Book et møte",
+    "linkedin": "LinkedIn"
+  },
+  "work": {
+    "title": "Utvalgte prosjekter",
+    "read": "Les casen",
+    "back": "Tilbake til prosjektene"
+  },
+  "case": {
+    "context": "Kontekst",
+    "did": "Hva jeg gjorde",
+    "myRole": "Min rolle",
+    "result": "Resultat",
+    "stack": "Teknologi",
+    "talk": "Vil du snakke om det?",
+    "book": "Book et møte",
+    "visit": "Åpne kartet"
+  },
+  "cases": {
+    "25-legal-entities": {
+      "title": "25 juridiske enheter, ett rapporteringslag",
+      "label": "World Kinect, Senior FP&A Analyst",
+      "summary": "Ledelsesrapporteringen for 25 juridiske enheter oppdateres nå daglig fra én styrt kilde, i stedet for 10 dager etter avslutning.",
+      "role": "Senior FP&A Analyst, World Kinect, Oslo, des. 2023 til juli 2026",
+      "context": "Et konsern med 25 juridiske enheter i APAC, EMEA og Nord-Amerika. Dataene lå i tre CRM-systemer, to ERP-systemer og to systemer for kontraktsstyring. Ledelsesrapportene kom omtrent 10 dager etter månedsavslutningen. Tallene ble hentet manuelt fra systemene og deretter avstemt manuelt. Arbeidet mitt omfattet fornybar energi, langsiktige energikontrakter og gassvirksomheten i USA.",
+      "did": [
+        "Utformet datamodellen og bygget, sammen med finansteamet, integrasjonslaget som samlet disse systemene i én styrt rapporteringsplattform.",
+        "Datainnhenting i Python til Snowflake, datalag i medallion-stil og data marts for Power BI.",
+        "Definerte standarder for stamdata. Sporet avvik i rapporteringen til rotårsaken og rettet dem i datamodellen, ikke i rapportene.",
+        "Bare en del av konsernet lå i Oracle FCCS, så jeg bygget et eget konsoliderings- og rapporteringslag i Snowflake som dekket alle enhetene.",
+        "Automatiserte avstemminger og la om arbeidsflytene for månedsavslutning og avviksanalyse.",
+        "Erstattet Excel-baserte prosesser med BI-rapportering som er bygget inn i ledelsens eksisterende rutiner.",
+        "Bygget et timeføringsverktøy og innførte det i konsulentavdelingen, inkludert opplæring av brukerne. Tidligere anslo avdelingen prosjektenes ferdigstillingsgrad. Nå styrer registrerte timer inntektsperiodiseringene automatisk og viser lønnsomhet per kunde."
+      ],
+      "myRoleText": "Jeg bygget datamodellen, dataflytene, dashbordene og timeføringsverktøyet, og lærte opp brukerne. Lederen min håndterte kommunikasjonen med de kommersielle teamene.",
+      "result": [
+        "Ledelsesrapporteringen gikk fra 10 dager etter avslutning til daglig oppdatering.",
+        "Uttrekk fra flere systemer og manuelle avstemminger ble erstattet av én styrt kilde.",
+        "Ledelsesresultat per enhet, region og forretningsområde, med drill-down til transaksjonsnivå og samsvar med de lovpålagte regnskapene.",
+        "Inntektsperiodiseringer for konsulentprosjekter kommer fra registrert tid i stedet for anslag, og lønnsomheten per kunde er synlig."
+      ]
+    },
+    "sales-funnel": {
+      "title": "En B2B-salgstrakt banken kan styre",
+      "label": "MAIB Bank, Product Owner",
+      "summary": "Jeg ledet teamet som bygget B2B-salgstrakten for Moldovas største forretningsbank, med årsakene til frafall. Salgstrakten ble styrbar.",
+      "role": "Product Owner, CRM og B2B-markedsanalyse, MAIB Bank, Chisinau (eksternt fra Oslo), nov. 2022 til des. 2023",
+      "context": "MAIB er Moldovas største forretningsbank. Banken hadde ingen samlet oversikt over kundereisen, fra markedsføringskostnader til salgskonvertering.",
+      "did": [
+        "Hadde ansvaret for Lead-modulen i CRM-plattformen.",
+        "Ledet et tverrfaglig team på 5 med full agil leveranse.",
+        "Utformet sammen med teamet den helhetlige B2B-salgstrakten, fra markedsføringskostnader til salgskonvertering, og registrerte årsaken til frafall på hvert trinn.",
+        "Bygget logikken i salgstrakten og datainnsamlingslaget som matet en samlet modell og et dashbord."
+      ],
+      "result": [
+        "Den første samlede sporingen av kundereisen i banken.",
+        "Salgstrakten ble styrbar: teamet kunne se hvor og hvorfor B2B-kunder falt fra."
+      ]
+    },
+    "cahul-map": {
+      "title": "Et bykart for investeringsbeslutninger",
+      "label": "Cahul, team på to",
+      "summary": "Ett kart over Cahuls generalplan, matrikkel, rådsvedtak og transportdokumenter, der hvert svar er lenket til kildesiden.",
+      "role": "Cahul, Moldova, et utviklerteam på to, i drift",
+      "context": "Oppgaven nå er å hjelpe byen mot målet om et mer effektivt transportnett, og å gjøre byplanleggingen mer åpen og raskere.",
+      "did": [
+        "Samlet generalplan, matrikkel, rådsvedtak, strategier og transportdokumenter på ett kart. Klikk på en tomt eller en gate for å se hva som er tillatt og planlagt der, med lenke til kildesiden.",
+        "Bygget de første modellene på dataene: befolkning, reiser og kollektivnettet, slik at alternativer kan sammenlignes og kontrolleres mot regelverket.",
+        "La til tilstandene Nå og Plan for lag og en nettverksredigerer, som grunnlag for en digital tvilling av byen."
+      ],
+      "result": [
+        "Et offentlig nettsted på rumensk, russisk og engelsk, i drift på cahulmap.pages.dev.",
+        "Dagens transportnett sammenlignet med flere optimaliserte alternativer.",
+        "I demomodus: hva som kan bygges hvor. Til nå var dette bare tilgjengelig på forespørsel til rådhuset, med flere ukers ventetid."
+      ]
+    },
+    "speak-to-data": {
+      "title": "Speak to data: spør dashbordet",
+      "label": "Eget prosjekt, under utvikling",
+      "summary": "Still dashbordet et spørsmål og få svaret i sanntid, fra validerte tall. Få en automatisk kommentar til rapporten etter periodeavslutning. Bygget på et KPI-dashbord for SaaS-bransjen (rule40).",
+      "role": "Eget prosjekt, 2026, under utvikling",
+      "context": "Jeg har bygget dashbord, fra enkeltsider til store semantiske modeller. Jo større organisasjonen er, desto mer komplekse blir spørsmålene den trenger svar på. Et dashbord viser de avtalte tallene, og oppfølgingsspørsmål havner vanligvis hos en analytiker. Dette prosjektet gir dashbordet sin egen analytiker: brukeren stiller et spørsmål og får svaret i sanntid. Jeg bygger det på et KPI-dashbord for SaaS-bransjen.",
+      "did": [
+        "Først det semantiske laget og metrikkene i dbt, med tester.",
+        "Deretter en chat i grensesnittet: et spørsmål på vanlig språk blir til et kall mot en deterministisk dbt-metrikk, og svaret kommer tilbake på vanlig språk.",
+        "Ved periodeavslutning skriver modellen et tekstsammendrag av rapporten og svarer på spørsmål om alle detaljer. Nyttig for selskaper med forgrenet hierarki, for å se hvor det trengs oppmerksomhet.",
+        "Metrikkene er versjonerte YAML-kontrakter og inndelt etter selskapets fase, ikke ett enkelt Rule of 40-tall."
+      ],
+      "result": [
+        "Modellen tar seg av språket, aldri av regnestykkene. Jeg kan vise den live."
+      ]
+    }
+  },
+  "experience": {
+    "title": "Erfaring",
+    "items": [
+      {
+        "company": "World Kinect",
+        "role": "Senior FP&A Analyst",
+        "place": "Oslo",
+        "dates": "des. 2023 til juli 2026",
+        "text": "Bygget rapporteringsplattformen for 25 juridiske enheter sammen med finansteamet: én styrt kilde for ledelsesrapportering og automatiserte avstemminger. Bygget og innførte et timeføringsverktøy som styrer inntektsperiodiseringer og viser lønnsomhet per kunde. Ledelsesrapportering: fra 10 dager til daglig."
+      },
+      {
+        "company": "MAIB Bank",
+        "role": "Product Owner CRM og B2B-markedsanalyse",
+        "place": "Chisinau (eksternt fra Oslo)",
+        "dates": "nov. 2022 til des. 2023",
+        "text": "Hadde ansvaret for Lead-modulen og ledet teamet på 5 som bygget B2B-salgstrakten med årsaker til frafall, fra markedsføringskostnader til konvertering. Første samlede sporing av kundereisen i banken."
+      },
+      {
+        "company": "NPO Digital Economy",
+        "role": "Chief Data Analyst",
+        "place": "Moskva",
+        "dates": "nov. 2020 til feb. 2022",
+        "text": "Prognoserammeverk og automatisert rapportering for nasjonale digitaliseringsprogrammer."
+      },
+      {
+        "company": "KPMG",
+        "role": "Senior Consultant",
+        "place": "",
+        "dates": "okt. 2019 til nov. 2020",
+        "text": "Modeller for investeringsvurdering av kapitalprosjekter. Automatiserte hyppig rapportering og kuttet forberedelsestiden med 30 %. En CAPEX-gjennomgang avdekket omtrent 10 % overvurdering av kostnader."
+      },
+      {
+        "company": "EY",
+        "role": "Consultant, Fraud Investigation & Dispute Services",
+        "place": "",
+        "dates": "mars 2018 til okt. 2019",
+        "text": "Compliance-revisjoner og økonomiske granskinger for multinasjonale farmasøytiske kunder."
+      }
+    ],
+    "educationLabel": "Utdanning",
+    "education": "Master og bachelor i finans, Financial University under the Government of the Russian Federation (bachelor med utmerkelse)",
+    "accaLabel": "ACCA",
+    "acca": "F1, F2, F3, F7 Financial Reporting, F8 Audit & Assurance",
+    "languagesLabel": "Språk",
+    "languages": "engelsk (flytende), rumensk og russisk (morsmål), norsk (A2, under utvikling), tyrkisk",
+    "toolsLabel": "Verktøy",
+    "tools": "Snowflake, SQL, Python, dbt, Power BI, Postgres, DuckDB, Git, Docker, FastAPI, Dynamics 365 Finance, Oracle FCCS, Brady ETRM, CXL ETRM, Creatio CRM, Claude API, OpenAI API. Prinsippene gjelder på tvers av teknologier."
+  },
+  "together": {
+    "title": "Samarbeid",
+    "intro": "Hovedmålet mitt er en fast stilling i Norge. Jeg tar også på meg et fåtall prosjekter med fast omfang.",
+    "offers": [
+      { "title": "Rapporteringsdiagnose", "text": "Fast omfang. En skriftlig vurdering av systemene, datamodellen og avslutningsprosessen deres." },
+      { "title": "Byggeprosjekt", "text": "Fast omfang. Datamodell, dataflyter og rapporteringslag." },
+      { "title": "Løpende støtte", "text": "Noen dager i måneden." }
+    ],
+    "fitTitle": "Passer godt for",
+    "fit": "Konsern med flere juridiske enheter, flere ERP- eller CRM-systemer, en Excel-tung avslutning, og team som bygger eller går over til et sentralt datavarehus eller én enkelt sannhetskilde.",
+    "book": "Book et møte"
+  },
+  "faq": {
+    "title": "Ofte stilte spørsmål",
+    "items": [
+      { "q": "Leter du etter jobb eller kunder?", "a": "Først og fremst en fast stilling i Norge. Jeg tar på meg et fåtall prosjekter med fast omfang." },
+      { "q": "Snakker du norsk?", "a": "Nivå A2, og jeg blir stadig bedre. Arbeidsspråket mitt er engelsk." },
+      { "q": "Er du bundet til Snowflake eller Power BI?", "a": "Nei. Prinsipper først, verktøy etterpå." },
+      { "q": "Kan jeg se arbeidet ditt?", "a": "Kundearbeid er konfidensielt. Casene beskriver det, og jeg kan vise min egen plattform live." }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt",
+    "email": "E-post",
+    "linkedin": "LinkedIn",
+    "calendar": "Kalender",
+    "min15": "15 minutter",
+    "min30": "30 minutter",
+    "or": "eller",
+    "location": "Oslo, Norge",
+    "form": {
+      "name": "Navn",
+      "email": "E-post",
+      "message": "Melding",
+      "send": "Send melding",
+      "sending": "Sender...",
+      "success": "Takk. Jeg svarer på e-post.",
+      "error": "Noe gikk galt. Send meg gjerne en e-post direkte."
+    }
+  },
+  "footer": {
+    "text": "© 2026 Vladislav Secrieru. Oslo, Norge"
+  }
+}
