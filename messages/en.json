@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Vladislav Secrieru | Finance & Data",
-    "description": "I build reporting layers that finance teams can trust. Eight years across Big 4 advisory, government analytics and corporate FP&A. Based in Oslo, open to permanent roles in Norway.",
-    "ogTagline": "Finance and data. I build the reporting layer finance teams can trust.",
+    "description": "I build reporting layers that finance and commercial teams use and trust together. Eight years across Big 4 advisory, government analytics and corporate FP&A. Based in Oslo, open to permanent roles in Norway.",
+    "ogTagline": "Finance and data. I build the reporting layer that finance and commercial teams use and trust together.",
     "ogStatus": "Oslo. Open to permanent roles in Norway.",
     "personDescription": "Finance and data specialist. Builds governed reporting layers for multi-entity groups. Eight years across Big 4 advisory, government analytics and corporate FP&A."
   },
@@ -18,7 +18,7 @@
     "language": "Language"
   },
   "hero": {
-    "subline": "Finance and data. I build the reporting layer finance teams can trust.",
+    "subline": "Finance and data. I build the reporting layer that finance and commercial teams use and trust together.",
     "body": "I have spent about eight years in Big 4 advisory, government analytics and corporate FP&A. At World Kinect I worked with the finance team to put management reporting for 25 legal entities on one governed source. Manual extracts and reconciliations gave way to automated pipelines, and the report went from 10 days after month-end close to a daily refresh.",
     "status": "Based in Oslo. Open to permanent roles in Norway and selected project work.",
     "seeWork": "See selected work",
