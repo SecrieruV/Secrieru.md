@@ -185,9 +185,7 @@
       }
     ],
     "fitTitle": "Good fit",
-    "fit": "Multi-entity groups, several ERPs or CRMs, an Excel-heavy close, teams on or moving to Snowflake or dbt.",
-    "notFitTitle": "Not a fit",
-    "notFit": "A new dashboard on top of data nobody trusts, without fixing the source. Work that needs full-time on-site presence outside Norway.",
+    "fit": "Multi-entity groups, several ERPs or CRMs, an Excel-heavy close, teams building or moving to a central data warehouse or a single source of truth.",
     "book": "Book a call"
   },
   "faq": {

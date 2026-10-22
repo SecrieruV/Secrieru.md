@@ -120,15 +120,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </li>
             ))}
           </ul>
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
-            <div>
-              <h3 className="font-semibold">{t("together.fitTitle")}</h3>
-              <p className="mt-2 text-sm text-muted">{t("together.fit")}</p>
-            </div>
-            <div>
-              <h3 className="font-semibold">{t("together.notFitTitle")}</h3>
-              <p className="mt-2 text-sm text-muted">{t("together.notFit")}</p>
-            </div>
+          <div className="mt-8">
+            <h3 className="font-semibold">{t("together.fitTitle")}</h3>
+            <p className="prose-line mt-2 text-sm text-muted">{t("together.fit")}</p>
           </div>
           <a href={site.calendar30} className={`${btnPrimary} mt-8`}>
             {t("together.book")}

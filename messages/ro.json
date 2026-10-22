@@ -185,9 +185,7 @@
       }
     ],
     "fitTitle": "Potrivit pentru",
-    "fit": "Grupuri cu mai multe entități juridice, mai multe ERP sau CRM, o închidere bazată pe Excel, echipe care folosesc sau trec la Snowflake ori dbt.",
-    "notFitTitle": "Nepotrivit pentru",
-    "notFit": "Un dashboard nou peste date în care nimeni nu are încredere, fără corectarea sursei. Muncă ce necesită prezență permanentă la birou în afara Norvegiei.",
+    "fit": "Grupuri cu mai multe entități juridice, mai multe ERP sau CRM, o închidere bazată pe Excel, echipe care construiesc sau trec la un depozit central de date sau la o singură sursă de adevăr.",
     "book": "Programează un apel"
   },
   "faq": {
