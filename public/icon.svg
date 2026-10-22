@@ -9,7 +9,7 @@
   </style>
   <rect class="bg" width="64" height="64" rx="14"/>
   <g class="fg" fill="none" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M10 19 L21 46 L32 19"/>
-    <path d="M53 24.5 C50 19 38 19 38 27 C38 34.500 53 32 53 40.500 C53 48 40 48.500 36.500 42.500"/>
+    <path d="M9 16 L18 48 L27 16"/>
+    <path d="M55 16 H42 A5 5 0 0 0 37 21 V27 A5 5 0 0 0 42 32 H50 A5 5 0 0 1 55 37 V43 A5 5 0 0 1 50 48 H37"/>
   </g>
 </svg>
