@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Vladislav Secrieru | Finance & Data",
+    "description": "I build reporting layers that finance teams can trust. Eight years across Big 4 advisory, government analytics and corporate FP&A. Based in Oslo, open to permanent roles in Norway.",
+    "ogTagline": "Finance and data. I build the reporting layer finance teams can trust.",
+    "ogStatus": "Oslo. Open to permanent roles in Norway.",
+    "personDescription": "Finance and data specialist. Builds governed reporting layers for multi-entity groups. Eight years across Big 4 advisory, government analytics and corporate FP&A."
+  },
+  "nav": {
+    "main": "Main",
+    "work": "Work",
+    "experience": "Experience",
+    "together": "Working together",
+    "contact": "Contact",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSwitch": "Switch to {mode} mode",
+    "language": "Language"
+  },
+  "hero": {
+    "subline": "Finance and data. I build the reporting layer finance teams can trust.",
+    "body": "I have spent about eight years in Big 4 advisory, government analytics and corporate FP&A. At World Kinect I worked with the finance team to put management reporting for 25 legal entities on one governed source. Manual extracts and reconciliations gave way to automated pipelines, and the report went from 10 days after month-end close to a daily refresh.",
+    "status": "Based in Oslo. Open to permanent roles in Norway and selected project work.",
+    "seeWork": "See selected work",
+    "cv": "Download CV",
+    "book": "Book a call",
+    "linkedin": "LinkedIn"
+  },
+  "work": {
+    "title": "Selected work",
+    "read": "Read the case study",
+    "back": "Back to selected work",
+    "north40": {
+      "label": "Own project",
+      "title": "rule40",
+      "summary": "A SaaS portfolio monitoring tool. A financial metrics framework built on dbt, DuckDB, Postgres and versioned YAML metric contracts. Metrics are staged by company stage, not one Rule of 40 number."
+    }
+  },
+  "case": {
+    "context": "Context",
+    "did": "What I did",
+    "myRole": "My role",
+    "result": "Result",
+    "stack": "Stack",
+    "talk": "Want to talk about it?",
+    "book": "Book a call",
+    "visit": "Open the live map"
+  },
+  "cases": {
+    "25-legal-entities": {
+      "title": "25 legal entities, one reporting layer",
+      "label": "World Kinect, Senior FP&A Analyst",
+      "summary": "Management reporting for 25 legal entities now refreshes daily from one governed source, instead of 10 days after close.",
+      "role": "Senior FP&A Analyst, World Kinect, Oslo, Dec 2023 to Jul 2026",
+      "context": "A group with 25 legal entities across APAC, EMEA and North America. Its data sat in three CRMs, two ERPs and two contract management systems. Management reports arrived about 10 days after month-end close. The numbers were pulled by hand from the systems, then reconciled manually. My work covered the renewable energy side, long-term energy contracts and the US gas business.",
+      "did": [
+        "Designed the data model and built the integration layer, together with the finance team, that brought those systems into one governed reporting platform.",
+        "Python ingestion into Snowflake, medallion-style data layers, data marts for Power BI.",
+        "Defined master data standards. Traced reporting discrepancies to their root cause and fixed them in the data model, not in the reports.",
+        "Only part of the group sat in Oracle FCCS, so I built a separate consolidation and reporting layer in Snowflake covering the full entity perimeter.",
+        "Automated reconciliations and re-engineered the month-end close and variance analysis workflows.",
+        "Replaced Excel-based processes with BI reporting embedded in existing leadership routines.",
+        "Built a time tracker and rolled it out to the consulting department, including training the people who use it. Before, the department set project completion by estimate. Now logged hours drive the revenue accruals automatically and show profitability by client."
+      ],
+      "myRoleText": "I built the data model, pipelines, dashboards and the time tracker, and trained its users. My manager handled communication with the commercial teams.",
+      "result": [
+        "Management reporting moved from 10 days after close to a daily refresh.",
+        "Extracts from several systems and manual reconciliations were replaced by one governed source.",
+        "Management P&L by entity, region and business line, drillable to transaction level and tying to the statutory accounts.",
+        "Revenue accruals for consulting projects come from logged time instead of estimates, and profitability by client is visible."
+      ]
+    },
+    "sales-funnel": {
+      "title": "The bank's first end-to-end sales funnel",
+      "label": "MAIB Bank, Product Owner",
+      "summary": "The first unified customer journey tracking at Moldova's largest commercial bank.",
+      "role": "Product Owner, CRM & B2B Marketing Analytics, MAIB Bank, Chisinau (remote from Oslo), Nov 2022 to Dec 2023",
+      "context": "MAIB is Moldova's largest commercial bank. It had no unified view of the customer journey from marketing spend to sales conversion.",
+      "did": [
+        "Owned the Lead module within the CRM platform.",
+        "Designed the end-to-end sales funnel, from marketing spend to sales conversion.",
+        "Built the funnel logic and the data collection layer that fed a unified model and a dashboard.",
+        "Led a cross-functional team of 5 with full agile delivery."
+      ],
+      "result": [
+        "The first unified customer journey tracking at the bank."
+      ]
+    },
+    "ai-reporting": {
+      "title": "Reporting with AI commentary on validated numbers",
+      "label": "Own project, in development",
+      "summary": "The model writes the commentary. The numbers come from validated metrics.",
+      "role": "Own project, 2026, in development",
+      "context": "The idea: automate the period-close commentary without letting a language model near the arithmetic.",
+      "did": [
+        "A standardized, multi-client input structure.",
+        "Variance analysis and validation in dbt.",
+        "Reconciliation gates that block publication when figures do not tie.",
+        "An AI layer that writes the commentary and answers questions from already validated metrics, with drill-down."
+      ],
+      "result": [
+        "The model handles language, never arithmetic. I can demo it live."
+      ]
+    },
+    "cahul-map": {
+      "title": "A city map for investment decisions",
+      "label": "Cahul, two-person team",
+      "summary": "One map of Cahul's master plan, cadastre, council decisions and transport documents, every answer linked to its source page.",
+      "role": "Cahul, Moldova, a two-person development team, live",
+      "context": "Modern technology can help a city decide faster and make its rules visible to investors. The municipality's open data on Cahul sat in different places and formats.",
+      "did": [
+        "Brought the master plan, cadastre, council decisions, strategies and transport documents onto one map. Click a parcel or a street to see what is allowed and planned there, with a link to the source page.",
+        "Built first models on the data: population, trips and the public transport network, so options can be compared and checked against regulations.",
+        "Added Now and Plan states for layers and a network editor, as the base for a digital twin of the city."
+      ],
+      "result": [
+        "A public site in Romanian, Russian and English, live at cahulmap.pages.dev.",
+        "Next step: a digital twin where decisions are discussed on evidence."
+      ]
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "World Kinect",
+        "role": "Senior FP&A Analyst",
+        "place": "Oslo",
+        "dates": "Dec 2023 to Jul 2026",
+        "text": "Built the reporting platform for 25 legal entities with the finance team: one governed source for management reporting, automated reconciliations. Built and rolled out a time tracker that drives revenue accruals and shows profitability by client. Management reporting: 10 days to daily."
+      },
+      {
+        "company": "MAIB Bank",
+        "role": "Product Owner CRM & B2B Marketing Analytics",
+        "place": "Chisinau (remote from Oslo)",
+        "dates": "Nov 2022 to Dec 2023",
+        "text": "Owned the Lead module and designed the sales funnel from marketing spend to conversion. Led a team of 5. First unified customer journey tracking at the bank."
+      },
+      {
+        "company": "NPO Digital Economy",
+        "role": "Chief Data Analyst",
+        "place": "Moscow",
+        "dates": "Nov 2020 to Feb 2022",
+        "text": "Forecasting frameworks and automated reporting for national digital programs."
+      },
+      {
+        "company": "KPMG",
+        "role": "Senior Consultant",
+        "place": "",
+        "dates": "Oct 2019 to Nov 2020",
+        "text": "Investment appraisal models for capital projects. Automated high-frequency reporting, cutting preparation time by 30%. A CAPEX review identified about 10% cost overstatement."
+      },
+      {
+        "company": "EY",
+        "role": "Consultant, Fraud Investigation & Dispute Services",
+        "place": "",
+        "dates": "Mar 2018 to Oct 2019",
+        "text": "Compliance audits and financial investigations for multinational pharma clients."
+      }
+    ],
+    "educationLabel": "Education",
+    "education": "Master and Bachelor of Finance, Financial University under the Government of the Russian Federation (bachelor with honours)",
+    "accaLabel": "ACCA",
+    "acca": "F1, F2, F3, F7 Financial Reporting, F8 Audit & Assurance",
+    "languagesLabel": "Languages",
+    "languages": "English (fluent), Romanian and Russian (native), Norwegian (A2, improving), Turkish",
+    "toolsLabel": "Tools",
+    "tools": "Snowflake, SQL, Python, dbt, Power BI, Postgres, DuckDB, Git, Docker, FastAPI, Dynamics 365 Finance, Oracle FCCS, Brady ETRM, CXL ETRM, Creatio CRM, Claude API, OpenAI API. The principles carry across stacks."
+  },
+  "together": {
+    "title": "Working together",
+    "intro": "My main goal is a permanent role in Norway. I also take on a small number of fixed-scope projects.",
+    "offers": [
+      {
+        "title": "Reporting diagnostic",
+        "text": "Fixed scope. A written assessment of your systems, data model and close process."
+      },
+      {
+        "title": "Build project",
+        "text": "Fixed scope. Data model, pipelines and reporting layer."
+      },
+      {
+        "title": "Ongoing support",
+        "text": "A few days a month."
+      }
+    ],
+    "fitTitle": "Good fit",
+    "fit": "Multi-entity groups, several ERPs or CRMs, an Excel-heavy close, teams on or moving to Snowflake or dbt.",
+    "notFitTitle": "Not a fit",
+    "notFit": "A new dashboard on top of data nobody trusts, without fixing the source. Work that needs full-time on-site presence outside Norway.",
+    "book": "Book a call"
+  },
+  "faq": {
+    "title": "FAQ",
+    "items": [
+      {
+        "q": "Are you looking for a job or for clients?",
+        "a": "Primarily a permanent role in Norway. I take on a small number of fixed-scope projects."
+      },
+      {
+        "q": "Do you speak Norwegian?",
+        "a": "A2 and improving. My working language is English."
+      },
+      {
+        "q": "Are you tied to Snowflake or Power BI?",
+        "a": "No. Principles first, tools second."
+      },
+      {
+        "q": "Can I see your work?",
+        "a": "Client work is confidential. The case studies describe it, and I can demo my own platform live."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "calendar": "Calendar",
+    "min15": "15 minutes",
+    "min30": "30 minutes",
+    "or": "or",
+    "location": "Oslo, Norway",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Thank you. I will reply by email.",
+      "error": "Something went wrong. Please email me directly."
+    }
+  },
+  "footer": {
+    "text": "© 2026 Vladislav Secrieru. Oslo, Norway"
+  }
+}

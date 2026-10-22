@@ -1,57 +1,79 @@
 "use client"
 
-import { useLanguage, type Language } from "@/lib/language-context"
+import { useEffect, useState } from "react"
+import { useLocale, useTranslations } from "next-intl"
+import { useTheme } from "next-themes"
+import { Link, usePathname } from "@/i18n/navigation"
+import { routing, localeNames } from "@/i18n/routing"
 
-export function Header() {
-  const { language, setLanguage, t } = useLanguage()
-
-  const languages: { code: Language; label: string }[] = [
-    { code: "en", label: "EN" },
-    { code: "ru", label: "RU" },
-    { code: "ro", label: "RO" },
-  ]
+function ThemeToggle() {
+  const t = useTranslations("nav")
+  const { resolvedTheme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+  const dark = resolvedTheme === "dark"
+  const nextLabel = dark ? t("themeLight") : t("themeDark")
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border/30">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-foreground font-medium tracking-widest text-sm">
-          VLADISLAV SECRIERU
-        </a>
+    <button
+      type="button"
+      onClick={() => setTheme(dark ? "light" : "dark")}
+      aria-label={mounted ? t("themeSwitch", { mode: nextLabel.toLowerCase() }) : undefined}
+      className="text-sm text-muted hover:text-foreground"
+    >
+      {mounted ? nextLabel : t("themeDark")}
+    </button>
+  )
+}
 
-        <nav className="hidden md:flex items-center gap-8">
-          <a href="#approach" className="text-muted-foreground hover:text-foreground transition-colors text-sm tracking-wide">
-            {t.nav.approach}
-          </a>
-          <a href="#case" className="text-muted-foreground hover:text-foreground transition-colors text-sm tracking-wide">
-            {t.nav.caseStudies}
-          </a>
-          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors text-sm tracking-wide">
-            {t.nav.about}
-          </a>
-          <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors text-sm tracking-wide">
-            {t.nav.contact}
-          </a>
-        </nav>
+function LanguageSwitcher() {
+  const t = useTranslations("nav")
+  const current = useLocale()
+  const pathname = usePathname()
 
-        <div className="flex items-center gap-1 text-sm">
-          {languages.map((lang, idx) => (
-            <span key={lang.code} className="flex items-center">
-              <button
-                onClick={() => setLanguage(lang.code)}
-                className={`transition-colors ${
-                  language === lang.code
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {lang.label}
-              </button>
-              {idx < languages.length - 1 && (
-                <span className="text-muted-foreground mx-1">/</span>
-              )}
-            </span>
+  return (
+    <ul aria-label={t("language")} className="flex items-center gap-2 text-sm">
+      {routing.locales.map((l) => (
+        <li key={l}>
+          <Link
+            href={pathname}
+            locale={l}
+            hrefLang={l}
+            aria-current={l === current ? "true" : undefined}
+            className={l === current ? "font-semibold text-foreground" : "text-muted hover:text-foreground"}
+          >
+            {localeNames[l]}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+export function Header() {
+  const t = useTranslations("nav")
+  const links = [
+    { href: "/#work", label: t("work") },
+    { href: "/#experience", label: t("experience") },
+    { href: "/#working-together", label: t("together") },
+    { href: "/#contact", label: t("contact") },
+  ] as const
+
+  return (
+    <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
+        <Link href="/" className="font-semibold tracking-tight">
+          Vladislav Secrieru
+        </Link>
+        <nav aria-label={t("main")} className="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm">
+          {links.map((l) => (
+            <Link key={l.href} href={l.href} className="text-muted hover:text-foreground">
+              {l.label}
+            </Link>
           ))}
-        </div>
+          <ThemeToggle />
+          <LanguageSwitcher />
+        </nav>
       </div>
     </header>
   )

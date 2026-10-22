@@ -1,70 +1,57 @@
 import { NextResponse } from "next/server"
 import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const escapeHtml = (s: string) =>
+  s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;")
+
+const clip = (v: unknown, max: number) => (typeof v === "string" ? v.trim().slice(0, max) : "")
 
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    const { fullName, workEmail, companyWebsite, challenge } = body
 
-    // Validate required fields
-    if (!fullName || !workEmail) {
-      return NextResponse.json(
-        { error: "Full name and email are required" },
-        { status: 400 }
-      )
+    // Honeypot: pretend success so bots do not retry
+    if (clip(body.website, 200)) return NextResponse.json({ success: true })
+
+    const name = clip(body.name, 120)
+    const email = clip(body.email, 200)
+    const message = clip(body.message, 4000)
+
+    if (!name || !email) {
+      return NextResponse.json({ error: "Name and email are required" }, { status: 400 })
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      return NextResponse.json({ error: "Invalid email address" }, { status: 400 })
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(workEmail)) {
-      return NextResponse.json(
-        { error: "Invalid email address" },
-        { status: 400 }
-      )
+    const apiKey = process.env.RESEND_API_KEY
+    if (!apiKey) {
+      console.error("RESEND_API_KEY is not set")
+      return NextResponse.json({ error: "Failed to send message" }, { status: 500 })
     }
 
-    // Send email using Resend
+    const resend = new Resend(apiKey)
     const { error } = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: "vladislav.secrieru@gmail.com",
-      replyTo: workEmail,
-      subject: `New inquiry from ${fullName}`,
+      from: process.env.CONTACT_FROM || "Contact Form <onboarding@resend.dev>",
+      to: process.env.CONTACT_TO || "vladislav.secrieru@gmail.com",
+      replyTo: email,
+      subject: `New message from ${name.replace(/[\r\n]+/g, " ")}`,
       html: `
-        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-          <h2 style="color: #0066FF;">New Contact Form Submission</h2>
-          <div style="background: #f5f5f5; padding: 20px; border-radius: 8px;">
-            <p><strong>Name:</strong> ${fullName}</p>
-            <p><strong>Email:</strong> <a href="mailto:${workEmail}">${workEmail}</a></p>
-            <p><strong>Company Website:</strong> ${companyWebsite || "Not provided"}</p>
-            <p><strong>Challenge:</strong></p>
-            <p style="background: white; padding: 15px; border-radius: 4px;">${challenge || "Not provided"}</p>
-          </div>
-          <p style="color: #666; font-size: 12px; margin-top: 20px;">
-            Sent from your website contact form at ${new Date().toLocaleString()}
-          </p>
-        </div>
+        <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+        <p><strong>Message:</strong></p>
+        <p style="white-space:pre-wrap">${escapeHtml(message) || "Not provided"}</p>
       `,
     })
 
     if (error) {
       console.error("Resend error:", error)
-      return NextResponse.json(
-        { error: "Failed to send email" },
-        { status: 500 }
-      )
+      return NextResponse.json({ error: "Failed to send message" }, { status: 500 })
     }
 
-    return NextResponse.json(
-      { success: true, message: "Message sent successfully" },
-      { status: 200 }
-    )
+    return NextResponse.json({ success: true })
   } catch (error) {
     console.error("Contact form error:", error)
-    return NextResponse.json(
-      { error: "Failed to send message" },
-      { status: 500 }
-    )
+    return NextResponse.json({ error: "Failed to send message" }, { status: 500 })
   }
 }

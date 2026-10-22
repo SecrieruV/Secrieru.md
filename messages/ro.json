@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Vladislav Secrieru | Finanțe și date",
+    "description": "Construiesc un nivel de raportare în care echipele financiare pot avea încredere. Opt ani în consultanță Big 4, analiză guvernamentală și FP&A corporativ. Locuiesc în Oslo și caut un post permanent în Norvegia.",
+    "ogTagline": "Finanțe și date. Construiesc nivelul de raportare în care echipele financiare pot avea încredere.",
+    "ogStatus": "Oslo. Deschis spre posturi permanente în Norvegia.",
+    "personDescription": "Specialist în finanțe și date. Construiește un nivel de raportare guvernat pentru grupuri cu mai multe entități juridice. Opt ani în consultanță Big 4, analiză guvernamentală și FP&A corporativ."
+  },
+  "nav": {
+    "main": "Meniu principal",
+    "work": "Proiecte",
+    "experience": "Experiență",
+    "together": "Colaborare",
+    "contact": "Contact",
+    "themeLight": "Luminos",
+    "themeDark": "Întunecat",
+    "themeSwitch": "Comută la modul {mode}",
+    "language": "Limba"
+  },
+  "hero": {
+    "subline": "Finanțe și date. Construiesc nivelul de raportare în care echipele financiare pot avea încredere.",
+    "body": "De aproximativ opt ani lucrez în consultanță Big 4, analiză guvernamentală și FP&A corporativ. La World Kinect am lucrat cu echipa financiară pentru a aduce raportarea managerială a 25 de entități juridice într-o singură sursă guvernată. Extragerile și reconcilierile manuale au fost înlocuite de fluxuri automate, iar raportul a trecut de la 10 zile după închiderea lunii la o actualizare zilnică.",
+    "status": "Locuiesc în Oslo. Deschis spre posturi permanente în Norvegia și proiecte selectate.",
+    "seeWork": "Vezi proiectele",
+    "cv": "Descarcă CV-ul",
+    "book": "Programează un apel",
+    "linkedin": "LinkedIn"
+  },
+  "work": {
+    "title": "Proiecte alese",
+    "read": "Citește studiul de caz",
+    "back": "Înapoi la proiecte",
+    "north40": {
+      "label": "Proiect propriu",
+      "title": "rule40",
+      "summary": "Un instrument de monitorizare a unui portofoliu de companii SaaS. Cadru de metrici financiare construit pe dbt, DuckDB, Postgres și contracte de metrici YAML cu versiuni. Metricile sunt împărțite pe etapa companiei, nu reduse la un singur număr Rule of 40."
+    }
+  },
+  "case": {
+    "context": "Context",
+    "did": "Ce am făcut",
+    "myRole": "Rolul meu",
+    "result": "Rezultat",
+    "stack": "Tehnologii",
+    "talk": "Vrei să discutăm?",
+    "book": "Programează un apel",
+    "visit": "Deschide harta"
+  },
+  "cases": {
+    "25-legal-entities": {
+      "title": "25 de entități juridice, un singur nivel de raportare",
+      "label": "World Kinect, Senior FP&A Analyst",
+      "summary": "Raportarea managerială pentru 25 de entități juridice se actualizează acum zilnic dintr-o singură sursă guvernată, în loc de 10 zile după închidere.",
+      "role": "Senior FP&A Analyst, World Kinect, Oslo, dec. 2023 până în iul. 2026",
+      "context": "Un grup cu 25 de entități juridice în APAC, EMEA și America de Nord. Datele se aflau în trei sisteme CRM, două ERP și două sisteme de gestiune a contractelor. Rapoartele manageriale ajungeau la aproximativ 10 zile după închiderea lunii. Cifrele erau extrase manual din sisteme, apoi reconciliate manual. Munca mea a acoperit energia regenerabilă, contractele energetice pe termen lung și afacerea de gaze din SUA.",
+      "did": [
+        "Am proiectat modelul de date și, împreună cu echipa financiară, am construit nivelul de integrare care a adus aceste sisteme într-o singură platformă de raportare guvernată.",
+        "Încărcare de date în Python către Snowflake, straturi de date în stil medallion, data marts pentru Power BI.",
+        "Am definit standardele pentru datele de bază. Am urmărit discrepanțele din raportare până la cauza lor și le-am corectat în modelul de date, nu în rapoarte.",
+        "Doar o parte din grup se afla în Oracle FCCS, așa că am construit în Snowflake un nivel separat de consolidare și raportare, care acoperă întregul perimetru de entități.",
+        "Am automatizat reconcilierile și am regândit fluxurile de închidere a lunii și de analiză a abaterilor.",
+        "Am înlocuit procesele bazate pe Excel cu raportare BI integrată în rutinele existente ale conducerii.",
+        "Am construit un instrument de înregistrare a timpului și l-am introdus în departamentul de consultanță, inclusiv instruirea utilizatorilor. Înainte, departamentul stabilea gradul de finalizare a proiectelor prin estimare. Acum orele înregistrate generează automat accruals de venituri și arată profitabilitatea pe client."
+      ],
+      "myRoleText": "Am construit modelul de date, fluxurile, dashboardurile și instrumentul de înregistrare a timpului și am instruit utilizatorii. Comunicarea cu echipele comerciale a fost gestionată de managerul meu.",
+      "result": [
+        "Raportarea managerială a trecut de la 10 zile după închidere la o actualizare zilnică.",
+        "Extragerile din mai multe sisteme și reconcilierile manuale au fost înlocuite de o singură sursă guvernată.",
+        "P&L managerial pe entitate, regiune și linie de business, cu detaliere până la nivel de tranzacție și concordanță cu conturile statutare.",
+        "Accruals de venituri pentru proiectele de consultanță provin din timpul înregistrat, nu din estimări, iar profitabilitatea pe client este vizibilă."
+      ]
+    },
+    "sales-funnel": {
+      "title": "Prima pâlnie de vânzări cap-coadă a băncii",
+      "label": "MAIB Bank, Product Owner",
+      "summary": "Prima urmărire unificată a parcursului clientului la cea mai mare bancă comercială din Moldova.",
+      "role": "Product Owner, CRM și analiză de marketing B2B, MAIB Bank, Chișinău (la distanță, din Oslo), nov. 2022 până în dec. 2023",
+      "context": "MAIB este cea mai mare bancă comercială din Moldova. Nu exista o imagine unificată a parcursului clientului, de la cheltuielile de marketing până la conversia în vânzare.",
+      "did": [
+        "Am condus modulul Lead din platforma CRM.",
+        "Am proiectat pâlnia de vânzări cap-coadă, de la cheltuielile de marketing până la conversia în vânzare.",
+        "Am construit logica pâlniei și nivelul de colectare a datelor care alimenta un model unificat și un dashboard.",
+        "Am condus o echipă interfuncțională de 5 persoane, cu livrare agile completă."
+      ],
+      "result": [
+        "Prima urmărire unificată a parcursului clientului în bancă."
+      ]
+    },
+    "ai-reporting": {
+      "title": "Raportare cu comentarii AI pe cifre validate",
+      "label": "Proiect propriu, în dezvoltare",
+      "summary": "Modelul scrie comentariile. Cifrele provin din metrici validate.",
+      "role": "Proiect propriu, 2026, în dezvoltare",
+      "context": "Ideea: să automatizez comentariile de închidere a perioadei fără a lăsa un model de limbaj să se apropie de calcule.",
+      "did": [
+        "O structură de intrare standardizată, pentru mai mulți clienți.",
+        "Analiza abaterilor și validarea în dbt.",
+        "Bariere de reconciliere care blochează publicarea atunci când cifrele nu se potrivesc.",
+        "Un nivel AI care scrie comentariile și răspunde la întrebări pe baza metricilor deja validate, cu detaliere."
+      ],
+      "result": [
+        "Modelul se ocupă de limbaj, niciodată de calcule. Pot face o demonstrație în direct."
+      ]
+    },
+    "cahul-map": {
+      "title": "O hartă a orașului pentru decizii de investiții",
+      "label": "Cahul, echipă de doi oameni",
+      "summary": "O singură hartă cu planul urbanistic general, cadastrul, deciziile Consiliului și documentele de transport din Cahul, fiecare răspuns cu link către pagina sursei.",
+      "role": "Cahul, Moldova, o echipă de doi dezvoltatori, funcțională",
+      "context": "Tehnologiile moderne pot ajuta un oraș să decidă mai repede și să facă regulile vizibile pentru investitori. Datele deschise ale primăriei despre Cahul se aflau în locuri și formate diferite.",
+      "did": [
+        "Am adus planul urbanistic general, cadastrul, deciziile Consiliului, strategiile și documentele de transport pe o singură hartă. La clic pe o parcelă sau o stradă se vede ce este permis și planificat acolo, cu link către pagina sursei.",
+        "Am construit primele modele pe aceste date: populația, deplasările și rețeaua de transport public, pentru a compara variante și a le verifica față de norme.",
+        "Am adăugat stările Acum și Plan pentru straturi și un editor de rețea, ca bază pentru un geamăn digital al orașului."
+      ],
+      "result": [
+        "Un site public în română, rusă și engleză, funcțional la cahulmap.pages.dev.",
+        "Pasul următor: un geamăn digital în care deciziile se discută pe baza faptelor."
+      ]
+    }
+  },
+  "experience": {
+    "title": "Experiență",
+    "items": [
+      {
+        "company": "World Kinect",
+        "role": "Senior FP&A Analyst",
+        "place": "Oslo",
+        "dates": "dec. 2023 până în iul. 2026",
+        "text": "Am construit împreună cu echipa financiară platforma de raportare pentru 25 de entități juridice: o singură sursă guvernată pentru raportarea managerială, reconcilieri automatizate. Am construit și introdus un instrument de înregistrare a timpului care generează accruals de venituri și arată profitabilitatea pe client. Raportare managerială: de la 10 zile la zilnic."
+      },
+      {
+        "company": "MAIB Bank",
+        "role": "Product Owner CRM și analiză de marketing B2B",
+        "place": "Chișinău (la distanță, din Oslo)",
+        "dates": "nov. 2022 până în dec. 2023",
+        "text": "Am condus modulul Lead și am proiectat pâlnia de vânzări de la cheltuielile de marketing până la conversie. Am condus o echipă de 5 persoane. Prima urmărire unificată a parcursului clientului în bancă."
+      },
+      {
+        "company": "NPO Digital Economy",
+        "role": "Chief Data Analyst",
+        "place": "Moscova",
+        "dates": "nov. 2020 până în febr. 2022",
+        "text": "Cadre de prognoză și raportare automatizată pentru programe naționale de digitalizare."
+      },
+      {
+        "company": "KPMG",
+        "role": "Senior Consultant",
+        "place": "",
+        "dates": "oct. 2019 până în nov. 2020",
+        "text": "Modele de evaluare a investițiilor pentru proiecte de capital. Am automatizat raportarea frecventă, reducând timpul de pregătire cu 30%. O analiză CAPEX a identificat o supraestimare a costurilor de aproximativ 10%."
+      },
+      {
+        "company": "EY",
+        "role": "Consultant, Fraud Investigation & Dispute Services",
+        "place": "",
+        "dates": "mar. 2018 până în oct. 2019",
+        "text": "Audituri de conformitate și investigații financiare pentru clienți farmaceutici multinaționali."
+      }
+    ],
+    "educationLabel": "Studii",
+    "education": "Master și licență în finanțe, Universitatea Financiară de pe lângă Guvernul Federației Ruse (licență cu distincție)",
+    "accaLabel": "ACCA",
+    "acca": "F1, F2, F3, F7 Financial Reporting, F8 Audit & Assurance",
+    "languagesLabel": "Limbi",
+    "languages": "engleză (fluent), română și rusă (nativ), norvegiană (A2, în progres), turcă",
+    "toolsLabel": "Instrumente",
+    "tools": "Snowflake, SQL, Python, dbt, Power BI, Postgres, DuckDB, Git, Docker, FastAPI, Dynamics 365 Finance, Oracle FCCS, Brady ETRM, CXL ETRM, Creatio CRM, Claude API, OpenAI API. Principiile se aplică pe orice stack."
+  },
+  "together": {
+    "title": "Colaborare",
+    "intro": "Obiectivul meu principal este un post permanent în Norvegia. Accept și un număr mic de proiecte cu domeniu fix.",
+    "offers": [
+      {
+        "title": "Diagnostic de raportare",
+        "text": "Domeniu fix. O evaluare scrisă a sistemelor, a modelului de date și a procesului de închidere."
+      },
+      {
+        "title": "Proiect de construcție",
+        "text": "Domeniu fix. Model de date, fluxuri și nivel de raportare."
+      },
+      {
+        "title": "Suport continuu",
+        "text": "Câteva zile pe lună."
+      }
+    ],
+    "fitTitle": "Potrivit pentru",
+    "fit": "Grupuri cu mai multe entități juridice, mai multe ERP sau CRM, o închidere bazată pe Excel, echipe care folosesc sau trec la Snowflake ori dbt.",
+    "notFitTitle": "Nepotrivit pentru",
+    "notFit": "Un dashboard nou peste date în care nimeni nu are încredere, fără corectarea sursei. Muncă ce necesită prezență permanentă la birou în afara Norvegiei.",
+    "book": "Programează un apel"
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "items": [
+      {
+        "q": "Cauți un loc de muncă sau clienți?",
+        "a": "În primul rând un post permanent în Norvegia. Accept un număr mic de proiecte cu domeniu fix."
+      },
+      {
+        "q": "Vorbești norvegiană?",
+        "a": "Nivel A2, în progres. Limba mea de lucru este engleza."
+      },
+      {
+        "q": "Ești legat de Snowflake sau Power BI?",
+        "a": "Nu. Întâi principiile, apoi instrumentele."
+      },
+      {
+        "q": "Pot vedea lucrările tale?",
+        "a": "Lucrările pentru clienți sunt confidențiale. Studiile de caz le descriu, iar propria platformă o pot prezenta în direct."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "calendar": "Calendar",
+    "min15": "15 minute",
+    "min30": "30 de minute",
+    "or": "sau",
+    "location": "Oslo, Norvegia",
+    "form": {
+      "name": "Nume",
+      "email": "E-mail",
+      "message": "Mesaj",
+      "send": "Trimite mesajul",
+      "sending": "Se trimite...",
+      "success": "Mulțumesc. Voi răspunde prin e-mail.",
+      "error": "Ceva nu a funcționat. Scrie-mi direct pe e-mail."
+    }
+  },
+  "footer": {
+    "text": "© 2026 Vladislav Secrieru. Oslo, Norvegia"
+  }
+}
