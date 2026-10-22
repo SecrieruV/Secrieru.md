@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Vladislav Secrieru | Finance & Data",
-    "description": "I build reporting layers that finance and commercial teams use and trust together. Eight years across Big 4 advisory, government analytics and corporate FP&A. Based in Oslo, open to permanent roles in Norway.",
-    "ogTagline": "Finance and data. I build the reporting layer that finance and commercial teams use and trust together.",
+    "description": "I build a single source of data and a reporting layer that finance and commercial teams trust and use. Eight years across Big 4 advisory, government analytics and corporate FP&A. Based in Oslo, open to permanent roles in Norway.",
+    "ogTagline": "Finance and data. I build a single source of data and a reporting layer that finance and commercial teams trust and use.",
     "ogStatus": "Oslo. Open to permanent roles in Norway.",
     "personDescription": "Finance and data specialist. Builds governed reporting layers for multi-entity groups. Eight years across Big 4 advisory, government analytics and corporate FP&A."
   },
@@ -18,7 +18,7 @@
     "language": "Language"
   },
   "hero": {
-    "subline": "Finance and data. I build the reporting layer that finance and commercial teams use and trust together.",
+    "subline": "Finance and data. I build a single source of data and a reporting layer that finance and commercial teams trust and use.",
     "body": "I have spent about eight years in Big 4 advisory, government analytics and corporate FP&A. At World Kinect I worked with the finance team to put management reporting for 25 legal entities on one governed source. Manual extracts and reconciliations gave way to automated pipelines, and the report went from 10 days after month-end close to a daily refresh.",
     "status": "Based in Oslo. Open to permanent roles in Norway and selected project work.",
     "seeWork": "See selected work",
@@ -29,12 +29,7 @@
   "work": {
     "title": "Selected work",
     "read": "Read the case study",
-    "back": "Back to selected work",
-    "north40": {
-      "label": "Own project",
-      "title": "rule40",
-      "summary": "A SaaS portfolio monitoring tool. A financial metrics framework built on dbt, DuckDB, Postgres and versioned YAML metric contracts. Metrics are staged by company stage, not one Rule of 40 number."
-    }
+    "back": "Back to selected work"
   },
   "case": {
     "context": "Context",
@@ -71,19 +66,20 @@
       ]
     },
     "sales-funnel": {
-      "title": "The bank's first end-to-end sales funnel",
+      "title": "A B2B funnel the bank can manage",
       "label": "MAIB Bank, Product Owner",
-      "summary": "The first unified customer journey tracking at Moldova's largest commercial bank.",
+      "summary": "I led the team that built the B2B customer funnel for Moldova's largest commercial bank, with the reasons for drop-off. The funnel became manageable.",
       "role": "Product Owner, CRM & B2B Marketing Analytics, MAIB Bank, Chisinau (remote from Oslo), Nov 2022 to Dec 2023",
-      "context": "MAIB is Moldova's largest commercial bank. It had no unified view of the customer journey from marketing spend to sales conversion.",
+      "context": "MAIB is Moldova's largest commercial bank. It had no unified view of the customer journey, from marketing spend to sales conversion.",
       "did": [
         "Owned the Lead module within the CRM platform.",
-        "Designed the end-to-end sales funnel, from marketing spend to sales conversion.",
-        "Built the funnel logic and the data collection layer that fed a unified model and a dashboard.",
-        "Led a cross-functional team of 5 with full agile delivery."
+        "Led a cross-functional team of 5 with full agile delivery.",
+        "With the team, designed the end-to-end B2B funnel from marketing spend to sales conversion and recorded the reason for drop-off at each stage.",
+        "Built the funnel logic and the data collection layer that fed a unified model and a dashboard."
       ],
       "result": [
-        "The first unified customer journey tracking at the bank."
+        "The first unified customer journey tracking at the bank.",
+        "The funnel became manageable: the team could see where B2B customers dropped out and why."
       ]
     },
     "cahul-map": {
@@ -91,7 +87,7 @@
       "label": "Cahul, two-person team",
       "summary": "One map of Cahul's master plan, cadastre, council decisions and transport documents, every answer linked to its source page.",
       "role": "Cahul, Moldova, a two-person development team, live",
-      "context": "Modern technology can help a city decide faster and make its rules visible to investors. The municipality's open data on Cahul sat in different places and formats.",
+      "context": "The current task is to help the city reach its goal of a more efficient transport network, and to make urban planning more transparent and faster.",
       "did": [
         "Brought the master plan, cadastre, council decisions, strategies and transport documents onto one map. Click a parcel or a street to see what is allowed and planned there, with a link to the source page.",
         "Built first models on the data: population, trips and the public transport network, so options can be compared and checked against regulations.",
@@ -99,20 +95,21 @@
       ],
       "result": [
         "A public site in Romanian, Russian and English, live at cahulmap.pages.dev.",
-        "Next step: a digital twin where decisions are discussed on evidence."
+        "The current transport network compared with several optimized options.",
+        "In demo mode: what can be built where. Until now this was available only by request to the city hall, within several weeks."
       ]
     },
     "speak-to-data": {
       "title": "Speak to data: ask the dashboard",
       "label": "Own project, in development",
-      "summary": "Ask a SaaS ARR dashboard a question and get the answer from validated numbers. The same layer writes the period-close commentary.",
+      "summary": "Ask the dashboard a question and get the answer in real time, from validated numbers. Get an automatic commentary on the report after period close. Built on a KPI dashboard for the SaaS industry (rule40).",
       "role": "Own project, 2026, in development",
-      "context": "A dashboard shows the numbers but does not answer the next question. I am building this on a dashboard for SaaS companies that shows the ARR portfolio, so strategic decisions are made on data.",
+      "context": "I have built dashboards from single pages to large semantic models. The larger the organization, the more complex the questions it needs answered. A dashboard shows the agreed numbers, and follow-up questions usually go to an analyst. This project gives the dashboard an analyst of its own: the user asks a question and gets the answer in real time. I am building it on a KPI dashboard for the SaaS industry.",
       "did": [
-        "An assistant inside the dashboard: ask a question in plain language and get an answer from already validated metrics, with drill-down to the transactions behind the number.",
-        "Period-close commentary written by the same layer, from the same validated numbers.",
-        "Variance analysis and validation in dbt. Reconciliation gates block publication when figures do not tie.",
-        "A standardized, multi-client input structure."
+        "First the semantic model and the metrics in dbt, with tests.",
+        "Then a chat on the front end: a plain-language question becomes a call to a deterministic dbt metric, and the answer comes back in plain language.",
+        "At period close, the model writes a text summary of the report and answers questions on any detail. Useful for companies with a branching hierarchy, to see where attention is needed.",
+        "Metrics are versioned YAML contracts and staged by company stage, not one Rule of 40 number."
       ],
       "result": [
         "The model handles language, never arithmetic. I can demo it live."
@@ -134,7 +131,7 @@
         "role": "Product Owner CRM & B2B Marketing Analytics",
         "place": "Chisinau (remote from Oslo)",
         "dates": "Nov 2022 to Dec 2023",
-        "text": "Owned the Lead module and designed the sales funnel from marketing spend to conversion. Led a team of 5. First unified customer journey tracking at the bank."
+        "text": "Owned the Lead module and led the team of 5 that built the B2B customer funnel with drop-off reasons, from marketing spend to conversion. First unified customer journey tracking at the bank."
       },
       {
         "company": "NPO Digital Economy",

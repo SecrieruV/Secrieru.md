@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Vladislav Secrieru | Finanțe și date",
-    "description": "Construiesc niveluri de raportare pe care echipele financiare și comerciale le folosesc împreună și în care au încredere. Opt ani în consultanță Big 4, analiză guvernamentală și FP&A corporativ. Locuiesc în Oslo și caut un post permanent în Norvegia.",
-    "ogTagline": "Finanțe și date. Construiesc nivelul de raportare pe care echipele financiare și comerciale îl folosesc împreună și în care au încredere.",
+    "description": "Construiesc o sursă unică de date și un nivel de raportare în care echipele financiare și comerciale au încredere și pe care îl folosesc. Opt ani în consultanță Big 4, analiză guvernamentală și FP&A corporativ. Locuiesc în Oslo și caut un post permanent în Norvegia.",
+    "ogTagline": "Finanțe și date. Construiesc o sursă unică de date și un nivel de raportare în care echipele financiare și comerciale au încredere și pe care îl folosesc.",
     "ogStatus": "Oslo. Deschis spre posturi permanente în Norvegia.",
     "personDescription": "Specialist în finanțe și date. Construiește un nivel de raportare guvernat pentru grupuri cu mai multe entități juridice. Opt ani în consultanță Big 4, analiză guvernamentală și FP&A corporativ."
   },
@@ -18,7 +18,7 @@
     "language": "Limba"
   },
   "hero": {
-    "subline": "Finanțe și date. Construiesc nivelul de raportare pe care echipele financiare și comerciale îl folosesc împreună și în care au încredere.",
+    "subline": "Finanțe și date. Construiesc o sursă unică de date și un nivel de raportare în care echipele financiare și comerciale au încredere și pe care îl folosesc.",
     "body": "De aproximativ opt ani lucrez în consultanță Big 4, analiză guvernamentală și FP&A corporativ. La World Kinect am lucrat cu echipa financiară pentru a aduce raportarea managerială a 25 de entități juridice într-o singură sursă guvernată. Extragerile și reconcilierile manuale au fost înlocuite de fluxuri automate, iar raportul a trecut de la 10 zile după închiderea lunii la o actualizare zilnică.",
     "status": "Locuiesc în Oslo. Deschis spre posturi permanente în Norvegia și proiecte selectate.",
     "seeWork": "Vezi proiectele",
@@ -29,12 +29,7 @@
   "work": {
     "title": "Proiecte alese",
     "read": "Citește studiul de caz",
-    "back": "Înapoi la proiecte",
-    "north40": {
-      "label": "Proiect propriu",
-      "title": "rule40",
-      "summary": "Un instrument de monitorizare a unui portofoliu de companii SaaS. Cadru de metrici financiare construit pe dbt, DuckDB, Postgres și contracte de metrici YAML cu versiuni. Metricile sunt împărțite pe etapa companiei, nu reduse la un singur număr Rule of 40."
-    }
+    "back": "Înapoi la proiecte"
   },
   "case": {
     "context": "Context",
@@ -71,19 +66,20 @@
       ]
     },
     "sales-funnel": {
-      "title": "Prima pâlnie de vânzări cap-coadă a băncii",
+      "title": "O pâlnie B2B pe care banca o poate gestiona",
       "label": "MAIB Bank, Product Owner",
-      "summary": "Prima urmărire unificată a parcursului clientului la cea mai mare bancă comercială din Moldova.",
+      "summary": "Am condus echipa care a construit pâlnia clienților B2B pentru cea mai mare bancă comercială din Moldova, cu motivele de abandon. Pâlnia a devenit gestionabilă.",
       "role": "Product Owner, CRM și analiză de marketing B2B, MAIB Bank, Chișinău (la distanță, din Oslo), nov. 2022 până în dec. 2023",
-      "context": "MAIB este cea mai mare bancă comercială din Moldova. Nu exista o imagine unificată a parcursului clientului, de la cheltuielile de marketing până la conversia în vânzare.",
+      "context": "MAIB este cea mai mare bancă comercială din Moldova. Banca nu avea o imagine unificată a parcursului clientului, de la cheltuielile de marketing până la conversia în vânzare.",
       "did": [
         "Am condus modulul Lead din platforma CRM.",
-        "Am proiectat pâlnia de vânzări cap-coadă, de la cheltuielile de marketing până la conversia în vânzare.",
-        "Am construit logica pâlniei și nivelul de colectare a datelor care alimenta un model unificat și un dashboard.",
-        "Am condus o echipă interfuncțională de 5 persoane, cu livrare agile completă."
+        "Am condus o echipă interfuncțională de 5 persoane, cu livrare agile completă.",
+        "Împreună cu echipa am proiectat pâlnia B2B cap-coadă, de la cheltuielile de marketing până la conversia în vânzare, și am înregistrat motivul abandonului la fiecare etapă.",
+        "Am construit logica pâlniei și nivelul de colectare a datelor care alimenta un model unificat și un dashboard."
       ],
       "result": [
-        "Prima urmărire unificată a parcursului clientului în bancă."
+        "Prima urmărire unificată a parcursului clientului în bancă.",
+        "Pâlnia a devenit gestionabilă: echipa vedea unde și de ce abandonau clienții B2B."
       ]
     },
     "cahul-map": {
@@ -91,7 +87,7 @@
       "label": "Cahul, echipă de doi oameni",
       "summary": "O singură hartă cu planul urbanistic general, cadastrul, deciziile Consiliului și documentele de transport din Cahul, fiecare răspuns cu link către pagina sursei.",
       "role": "Cahul, Moldova, o echipă de doi dezvoltatori, funcțională",
-      "context": "Tehnologiile moderne pot ajuta un oraș să decidă mai repede și să facă regulile vizibile pentru investitori. Datele deschise ale primăriei despre Cahul se aflau în locuri și formate diferite.",
+      "context": "Sarcina actuală este să ajut orașul să-și atingă obiectivul unei rețele de transport mai eficiente și să fac procesul urbanistic mai transparent și mai rapid.",
       "did": [
         "Am adus planul urbanistic general, cadastrul, deciziile Consiliului, strategiile și documentele de transport pe o singură hartă. La clic pe o parcelă sau o stradă se vede ce este permis și planificat acolo, cu link către pagina sursei.",
         "Am construit primele modele pe aceste date: populația, deplasările și rețeaua de transport public, pentru a compara variante și a le verifica față de norme.",
@@ -99,20 +95,21 @@
       ],
       "result": [
         "Un site public în română, rusă și engleză, funcțional la cahulmap.pages.dev.",
-        "Pasul următor: un geamăn digital în care deciziile se discută pe baza faptelor."
+        "Compararea rețelei actuale de transport cu mai multe variante optimizate.",
+        "În regim demo: ce se poate construi și unde. Până acum aceste informații erau disponibile doar la cerere la primărie, în câteva săptămâni."
       ]
     },
     "speak-to-data": {
       "title": "Speak to data: întreabă dashboardul",
       "label": "Proiect propriu, în dezvoltare",
-      "summary": "Pune o întrebare unui dashboard ARR pentru SaaS și primești răspunsul din cifre validate. Același nivel scrie comentariile de închidere a perioadei.",
+      "summary": "Pune o întrebare dashboardului și primești răspunsul în timp real, din cifre validate. Primești un comentariu automat la raport după închiderea perioadei. Pe exemplul unui panou KPI pentru industria SaaS (rule40).",
       "role": "Proiect propriu, 2026, în dezvoltare",
-      "context": "Un dashboard arată cifrele, dar nu răspunde la întrebarea următoare. Dezvolt acest lucru pe exemplul unui dashboard pentru companii SaaS care arată portofoliul ARR, pentru ca deciziile strategice să se ia pe baza datelor.",
+      "context": "Am construit dashboarduri, de la pagini simple până la modele semantice mari. Cu cât organizația este mai mare, cu atât întrebările la care are nevoie de răspuns sunt mai complexe. Un dashboard arată cifrele agreate, iar întrebările ulterioare ajung de obicei la un analist. Acest proiect oferă dashboardului propriul analist: utilizatorul pune o întrebare și primește răspunsul în timp real. Îl dezvolt pe exemplul unui panou KPI pentru industria SaaS.",
       "did": [
-        "Un asistent în interiorul dashboardului: întrebi în limbaj obișnuit și primești răspuns din metrici deja validate, cu detaliere până la tranzacțiile din spatele cifrei.",
-        "Comentariile de închidere a perioadei sunt scrise de același nivel, din aceleași cifre validate.",
-        "Analiza abaterilor și validarea în dbt. Barierele de reconciliere blochează publicarea atunci când cifrele nu se potrivesc.",
-        "O structură de intrare standardizată, pentru mai mulți clienți."
+        "Mai întâi modelul semantic și metricile în dbt, cu teste.",
+        "Apoi un chat în interfață: o întrebare în limbaj obișnuit devine un apel către o metrică dbt deterministă, iar răspunsul revine în limbaj obișnuit.",
+        "La închiderea perioadei, modelul scrie un rezumat text al raportului și răspunde la întrebări despre orice detaliu. Util pentru companii cu ierarhie ramificată, pentru a vedea unde este nevoie de atenție.",
+        "Metricile sunt contracte YAML cu versiuni și sunt împărțite pe etapa companiei, nu reduse la un singur număr Rule of 40."
       ],
       "result": [
         "Modelul se ocupă de limbaj, niciodată de calcule. Pot face o demonstrație în direct."
@@ -134,7 +131,7 @@
         "role": "Product Owner CRM și analiză de marketing B2B",
         "place": "Chișinău (la distanță, din Oslo)",
         "dates": "nov. 2022 până în dec. 2023",
-        "text": "Am condus modulul Lead și am proiectat pâlnia de vânzări de la cheltuielile de marketing până la conversie. Am condus o echipă de 5 persoane. Prima urmărire unificată a parcursului clientului în bancă."
+        "text": "Am condus modulul Lead și echipa de 5 persoane care a construit pâlnia clienților B2B cu motivele de abandon, de la cheltuielile de marketing până la conversie. Prima urmărire unificată a parcursului clientului în bancă."
       },
       {
         "company": "NPO Digital Economy",

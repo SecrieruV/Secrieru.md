@@ -78,11 +78,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               </li>
             ))}
           </ul>
-          <div className="mt-4 rounded-lg border border-border p-5">
-            <p className="text-sm text-muted">{t("work.north40.label")}</p>
-            <h3 className="mt-1 font-semibold">{t("work.north40.title")}</h3>
-            <p className="prose-line mt-2 text-sm text-muted">{t("work.north40.summary")}</p>
-          </div>
         </Section>
 
         <Section id="experience" title={t("experience.title")}>
