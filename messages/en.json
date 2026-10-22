@@ -86,22 +86,6 @@
         "The first unified customer journey tracking at the bank."
       ]
     },
-    "ai-reporting": {
-      "title": "Reporting with AI commentary on validated numbers",
-      "label": "Own project, in development",
-      "summary": "The model writes the commentary. The numbers come from validated metrics.",
-      "role": "Own project, 2026, in development",
-      "context": "The idea: automate the period-close commentary without letting a language model near the arithmetic.",
-      "did": [
-        "A standardized, multi-client input structure.",
-        "Variance analysis and validation in dbt.",
-        "Reconciliation gates that block publication when figures do not tie.",
-        "An AI layer that writes the commentary and answers questions from already validated metrics, with drill-down."
-      ],
-      "result": [
-        "The model handles language, never arithmetic. I can demo it live."
-      ]
-    },
     "cahul-map": {
       "title": "A city map for investment decisions",
       "label": "Cahul, two-person team",
@@ -116,6 +100,22 @@
       "result": [
         "A public site in Romanian, Russian and English, live at cahulmap.pages.dev.",
         "Next step: a digital twin where decisions are discussed on evidence."
+      ]
+    },
+    "speak-to-data": {
+      "title": "Speak to data: ask the dashboard",
+      "label": "Own project, in development",
+      "summary": "Ask a SaaS ARR dashboard a question and get the answer from validated numbers. The same layer writes the period-close commentary.",
+      "role": "Own project, 2026, in development",
+      "context": "A dashboard shows the numbers but does not answer the next question. I am building this on a dashboard for SaaS companies that shows the ARR portfolio, so strategic decisions are made on data.",
+      "did": [
+        "An assistant inside the dashboard: ask a question in plain language and get an answer from already validated metrics, with drill-down to the transactions behind the number.",
+        "Period-close commentary written by the same layer, from the same validated numbers.",
+        "Variance analysis and validation in dbt. Reconciliation gates block publication when figures do not tie.",
+        "A standardized, multi-client input structure."
+      ],
+      "result": [
+        "The model handles language, never arithmetic. I can demo it live."
       ]
     }
   },

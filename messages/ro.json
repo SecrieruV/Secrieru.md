@@ -86,22 +86,6 @@
         "Prima urmărire unificată a parcursului clientului în bancă."
       ]
     },
-    "ai-reporting": {
-      "title": "Raportare cu comentarii AI pe cifre validate",
-      "label": "Proiect propriu, în dezvoltare",
-      "summary": "Modelul scrie comentariile. Cifrele provin din metrici validate.",
-      "role": "Proiect propriu, 2026, în dezvoltare",
-      "context": "Ideea: să automatizez comentariile de închidere a perioadei fără a lăsa un model de limbaj să se apropie de calcule.",
-      "did": [
-        "O structură de intrare standardizată, pentru mai mulți clienți.",
-        "Analiza abaterilor și validarea în dbt.",
-        "Bariere de reconciliere care blochează publicarea atunci când cifrele nu se potrivesc.",
-        "Un nivel AI care scrie comentariile și răspunde la întrebări pe baza metricilor deja validate, cu detaliere."
-      ],
-      "result": [
-        "Modelul se ocupă de limbaj, niciodată de calcule. Pot face o demonstrație în direct."
-      ]
-    },
     "cahul-map": {
       "title": "O hartă a orașului pentru decizii de investiții",
       "label": "Cahul, echipă de doi oameni",
@@ -116,6 +100,22 @@
       "result": [
         "Un site public în română, rusă și engleză, funcțional la cahulmap.pages.dev.",
         "Pasul următor: un geamăn digital în care deciziile se discută pe baza faptelor."
+      ]
+    },
+    "speak-to-data": {
+      "title": "Speak to data: întreabă dashboardul",
+      "label": "Proiect propriu, în dezvoltare",
+      "summary": "Pune o întrebare unui dashboard ARR pentru SaaS și primești răspunsul din cifre validate. Același nivel scrie comentariile de închidere a perioadei.",
+      "role": "Proiect propriu, 2026, în dezvoltare",
+      "context": "Un dashboard arată cifrele, dar nu răspunde la întrebarea următoare. Dezvolt acest lucru pe exemplul unui dashboard pentru companii SaaS care arată portofoliul ARR, pentru ca deciziile strategice să se ia pe baza datelor.",
+      "did": [
+        "Un asistent în interiorul dashboardului: întrebi în limbaj obișnuit și primești răspuns din metrici deja validate, cu detaliere până la tranzacțiile din spatele cifrei.",
+        "Comentariile de închidere a perioadei sunt scrise de același nivel, din aceleași cifre validate.",
+        "Analiza abaterilor și validarea în dbt. Barierele de reconciliere blochează publicarea atunci când cifrele nu se potrivesc.",
+        "O structură de intrare standardizată, pentru mai mulți clienți."
+      ],
+      "result": [
+        "Modelul se ocupă de limbaj, niciodată de calcule. Pot face o demonstrație în direct."
       ]
     }
   },

@@ -2,7 +2,7 @@
 export const cases = [
   { slug: "25-legal-entities", hasMyRole: true, stack: "Snowflake, SQL, Python, Power BI, Oracle FCCS" },
   { slug: "sales-funnel", hasMyRole: false, stack: null },
-  { slug: "ai-reporting", hasMyRole: false, stack: "dbt, DuckDB, Postgres, Python, Next.js, Claude API" },
+  { slug: "speak-to-data", hasMyRole: false, stack: "dbt, DuckDB, Postgres, Python, Next.js, Claude API" },
   {
     slug: "cahul-map",
     hasMyRole: false,
